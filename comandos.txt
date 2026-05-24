@@ -1,0 +1,22 @@
+docker 
+
+docker ps // ver contendores activos
+docker compose up -d // crear e iniciar contendores -d los deja ejectuando en segundo plano
+docker compose down //detener contendores
+docker rm -f (remplazar por el nombre del contenedor) // elimina forzadamente el contenedor
+
+frontend
+python3 -m http.server 5500
+
+backend
+npm run dev // inciar servidor
+
+
+base de datos docker
+docker ps 
+docker exec -it bicitaxi_mysql bash
+mysql -u (remplazar por el usuario) -p (remplazar por el password)
+
+
+http://localhost:5500/viajes.html
+http://localhost:3000/api/viajes

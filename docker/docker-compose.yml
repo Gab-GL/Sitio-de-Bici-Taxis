@@ -1,0 +1,45 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: bicitaxi_mysql
+  
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bicitaxi_db
+  
+    ports:
+      - "3307:3306"
+  
+    volumes:
+      - ../database:/docker-entrypoint-initdb.d
+  
+    restart: always
+  
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      
+  backend:
+   build: ../backend
+ 
+   ports:
+     - "3000:3000"
+ 
+   volumes:
+     - ../backend:/app
+ 
+   depends_on:
+     mysql:
+       condition: service_healthy
+
+  frontend:
+    build: ../frontend
+
+    ports:
+      - "5500:5500"
+
+    volumes:
+      - ../frontend:/app

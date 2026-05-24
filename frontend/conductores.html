@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#d6e4f9",
+                        "on-tertiary-container": "#3aa186",
+                        "primary": "#041627",
+                        "surface-container-low": "#eef4ff",
+                        "surface-container-high": "#dce9fe",
+                        "secondary-fixed": "#ffdcc3",
+                        "inverse-surface": "#243141",
+                        "on-surface-variant": "#44474c",
+                        "tertiary": "#001912",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#e5eeff",
+                        "on-primary-fixed-variant": "#38485a",
+                        "on-secondary-fixed": "#2f1500",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#1a2b3c",
+                        "primary-fixed-dim": "#b7c8de",
+                        "on-secondary-container": "#603100",
+                        "tertiary-fixed-dim": "#76d8bb",
+                        "on-primary-container": "#8192a7",
+                        "surface-tint": "#4f6073",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface": "#f8f9ff",
+                        "on-surface": "#0f1c2b",
+                        "primary-fixed": "#d2e4fb",
+                        "secondary-container": "#fd8b00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#92f5d6",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#0f1c2b",
+                        "secondary": "#904d00",
+                        "surface-dim": "#cddbf0",
+                        "outline-variant": "#c4c6cd",
+                        "background": "#f8f9ff",
+                        "inverse-primary": "#b7c8de",
+                        "on-primary-fixed": "#0b1d2d",
+                        "surface-container-highest": "#d6e4f9",
+                        "on-tertiary-fixed-variant": "#005140",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-container": "#003025",
+                        "on-tertiary-fixed": "#002018",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "outline": "#74777d"
+                    },
+
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+
+                    spacing: {
+                        "md": "16px",
+                        "unit": "4px",
+                        "gutter": "16px",
+                        "sm": "8px",
+                        "xl": "40px",
+                        "margin-page": "32px",
+                        "xs": "4px",
+                        "lg": "24px"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Conductores</title>
+</head>
+
+<body class="bg-background text-on-background min-h-screen flex overflow-hidden">
+
+    <!-- SIDEBAR -->
+    <aside
+        class="h-screen w-64 fixed left-0 top-0 bg-primary border-r border-outline flex flex-col py-md gap-sm z-50">
+
+        <div class="px-md mb-lg">
+            <div class="text-xl font-bold text-on-primary uppercase tracking-widest">
+                Global Logistics
+            </div>
+
+            <div class="text-xs text-on-primary-container uppercase font-bold opacity-70">
+                Terminal A-12
+            </div>
+        </div>
+
+        <nav class="flex-1 px-sm">
+            viajes
+
+            <a href="viajes.html"
+                class="flex items-center gap-md px-md py-sm text-on-primary-container hover:text-on-primary hover:bg-on-primary-fixed-variant/20 rounded-lg my-1 mx-2 transition-colors duration-150">
+
+                <span class="material-symbols-outlined">
+                    pin_drop
+                </span>
+
+                <span class="text-sm font-bold uppercase">
+                    Viajes
+                </span>
+            </a>
+           --conductores----
+            <a href="conductores.html"
+                class="flex items-center gap-md px-md py-sm bg-secondary-container text-on-secondary-container font-bold rounded-lg my-1 mx-2">
+
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+
+                <span class="text-sm font-bold uppercase">
+                    Conductores
+                </span>
+            </a>
+           ----bici taxis----
+            <a href="index.html"
+                class="flex items-center gap-md px-md py-sm text-on-primary-container hover:text-on-primary hover:bg-on-primary-fixed-variant/20 rounded-lg my-1 mx-2 transition-colors duration-150">
+
+                <span class="material-symbols-outlined">
+                    bike_scooter
+                </span>
+
+                <span class="text-sm font-bold uppercase">
+                    Bici Taxis
+                </span>
+            </a>            
+            ------rutas------
+            <a href="rutas.html"
+                class="flex items-center gap-md px-md py-sm text-on-primary-container hover:text-on-primary hover:bg-on-primary-fixed-variant/20 rounded-lg my-1 mx-2 transition-colors duration-150">
+
+                <span class="material-symbols-outlined">
+                    map
+                </span>
+
+                <span class="text-sm font-bold uppercase">
+                    Rutas
+                </span>
+            </a>
+            
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="flex-1 ml-64 flex flex-col min-h-screen">
+
+        <!-- HEADER -->
+        <header
+            class="flex justify-between items-center w-full px-lg h-16 bg-surface-container-lowest border-b border-outline-variant">
+
+            <h1 class="text-3xl font-black text-primary tracking-tight">
+                Centro de operaciones
+            </h1>
+
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="p-lg flex-1 overflow-y-auto">
+
+            <!-- FORMULARIO -->
+            <div class="bg-surface-container-lowest border border-outline-variant p-lg mb-xl">
+
+                <h3 class="text-xl font-bold mb-md">
+                    Registrar Conductor
+                </h3>
+
+                <form id="form-conductor" class="grid grid-cols-3 gap-md">
+
+                    <input type="text" id="nombre" placeholder="Nombre"
+                        class="border border-outline-variant p-sm rounded" required />
+
+                    <input type="text" id="licencia" placeholder="Licencia"
+                        class="border border-outline-variant p-sm rounded" required />
+
+                    <input type="text" id="telefono" placeholder="Teléfono"
+                        class="border border-outline-variant p-sm rounded" required />
+
+                    <button type="submit"
+                        class="bg-primary text-on-primary py-sm rounded font-bold col-span-3 hover:opacity-90">
+
+                        Guardar Conductor
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- TITULO -->
+            <div class="flex justify-between items-end mb-xl">
+
+                <div>
+
+                    <h2 class="text-5xl font-bold text-primary">
+                        Conductores
+                    </h2>
+
+                    <p class="text-on-surface-variant">
+                        Registra y gestiona conductores
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- TABLA -->
+            <div class="bg-surface-container-lowest border border-outline-variant overflow-hidden rounded">
+
+                <table class="w-full text-left border-collapse">
+
+                    <thead class="bg-primary text-on-primary uppercase text-sm">
+
+                        <tr>
+
+                            <th class="px-lg py-md">
+                                ID
+                            </th>
+
+                            <th class="px-lg py-md">
+                                Nombre
+                            </th>
+
+                            <th class="px-lg py-md">
+                                Telefono
+                            </th>
+
+                            <th class="px-lg py-md">
+                                Licencia
+                            </th>
+
+                            <th class="px-lg py-md text-right">
+                                Acciones
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tabla-conductores" class="text-sm">
+
+                        <!-- JS inserta los datos aquí -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="./js/conductores.js"></script>
+
+</body>
+
+</html>
