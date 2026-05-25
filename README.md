@@ -6,7 +6,7 @@ Sistema administrativo para la gestion de bicitaxis desarrollado con:
 - Express
 - MySQL
 - Docker
-- Arquitectura MVC
+- Arquitectura Cliente-Servidor
 
 El proyecto permite administrar:
 
