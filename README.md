@@ -19,15 +19,13 @@ El proyecto permite administrar:
 
 # Descripcion tecnica del sistema
 
-Este sistema implementa una arquitectura **cliente-servidor desacoplada a nivel logico**, donde el backend en Node.js actua como servidor de aplicacion y la base de datos MySQL como capa de persistencia.
-
 El sistema sigue el patron **MVC (Model-View-Controller)**:
 
 - **Controllers**: gestionan la logica de negocio y procesan las solicitudes HTTP.
 - **Routes**: definen los endpoints que conectan las peticiones del cliente con los controladores.
 - **Views**: plantillas HTML renderizadas desde el backend para la interfaz administrativa.
 
-La comunicacion con la base de datos se realiza mediante el driver **mysql2 con soporte de promesas**, permitiendo el uso de `async/await` para operaciones asincronas.
+La comunicacion con la base de datos se realiza mediante el driver **mysql2*.
 
 La aplicacion se ejecuta dentro de un entorno contenerizado con Docker, donde MySQL corre en un contenedor independiente expuesto al backend mediante red interna y puerto mapeado.
 
